@@ -1,0 +1,191 @@
+.card {
+  background: #f6f7f9;
+  padding: 32px 0 42px 0;
+}
+.card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.card .card-top .card-top-left {
+  width: 45%;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--information-500, #54a6ff);
+  padding: 24px;
+  position: relative;
+}
+.card .card-top .card-top-left .img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+.card .card-top .card-top-left h3 {
+  color: var(--primary-0, #fff);
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.96px;
+}
+.card .card-top .card-top-left p {
+  color: var(--primary-0, #fff);
+
+  /* Medium/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  margin: 16px 0 20px 0;
+}
+.card .card-top .card-top-left button {
+  color: var(--primary-0, #fff);
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  border-radius: 4px;
+  background: var(--primary-500, #3563e9);
+  padding: 10px 20px;
+  border: none;
+}
+
+.card .card-top .card-top-right {
+  width: 45%;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--primary-500, #3563e9);
+  padding: 24px;
+  position: relative;
+}
+.card .card-top .card-top-right .img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+.card .card-top .card-top-right h3 {
+  color: var(--primary-0, #fff);
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.96px;
+}
+.card .card-top .card-top-right p {
+  color: var(--primary-0, #fff);
+
+  /* Medium/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  margin: 16px 0 20px 0;
+}
+.card .card-top .card-top-right button {
+  color: var(--primary-0, #fff);
+  text-align: center;
+  border: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  border-radius: 4px;
+  background: var(--information-500, #54a6ff);
+  padding: 10px 20px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-bottom .card-bottom-left {
+  border-radius: 10px;
+  background: var(--primary-0, #fff);
+  width: 45%;
+  height: 136px;
+  flex-shrink: 0;
+  padding: 24px 48px 0 48px;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--primary-500, #3563e9);
+}
+.lot-time-blok {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  width: 1px;
+  height: 48px;
+  background: rgba(195, 212, 233, 0.4);
+}
+.lot-time-blok label p {
+  color: var(--secondary-500, #1a202c);
+
+  /* Bold/Type@16 */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+.lot-time-blok label select {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+.popular {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.popular p {
+  color: var(--secondary-300, #90a3bf);
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.popular h4 {
+  color: var(--primary-500, #3563e9);
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

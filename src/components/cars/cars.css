@@ -1,0 +1,161 @@
+.cars-card {
+  display: flex;
+  background: #f6f7f9;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cars-box {
+  border-radius: 10px;
+  background: var(--primary-0, #fff);
+  width: 304px;
+  height: 388px;
+  padding: 24px 24px 0 24px;
+}
+.cars-box-top {
+  display: flex;
+  justify-content: space-between;
+}
+.cars-box-top-left h4 {
+  color: var(--secondary-500, #1a202c);
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.6px;
+}
+
+.cars-box-top-left p {
+  color: var(--secondary-300, #90a3bf);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+}
+.like-btn {
+  cursor: pointer;
+}
+.cars-box-middle {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: center;
+}
+.cars-box-bottom-1 {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manual {
+  display: flex;
+  gap: 6px;
+  color: var(--secondary-300, #90a3bf);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.sum span {
+  color: var(--secondary-300, #90a3bf);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sum {
+  color: var(--secondary-500, #1a202c);
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  gap: 6px;
+}
+.cars-box-bottom-1 button {
+  color: var(--primary-0, #fff);
+  text-align: center;
+  cursor: pointer;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  border-radius: 4px;
+  background: var(--primary-500, #3563e9);
+  padding: 10px 20px;
+  border: none;
+}
+.RecomendationCar {
+  /* display: flex; */
+  width: 100%;
+  margin: 42px 0 30px 0;
+  color: var(--secondary-300, #90a3bf);
+  /* text-align: center; */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.showMore {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+  /* margin-top: 64px;
+  margin-bottom: 64px; */
+  background: #f6f7f9;
+}
+.showMore button {
+  color: var(--primary-0, #fff);
+  text-align: center;
+  border: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  border-radius: 4px;
+  background: var(--primary-500, #3563e9);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.showMore p {
+  color: var(--secondary-300, #90a3bf);
+  text-align: right;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+}
+.like-modul {
+  position: relative;
+  z-index: 10;
+}
+.modul {
+  overflow-y: scroll;
+  left: -130px;
+  top: 40px;
+  position: absolute;
+  width: 304px;
+  height: 588px;
+  box-shadow: 0 0 5px #000;
+  border-radius: 20px;
+  /* background-color: rgb(223, 24, 24); */
+}
+.modul::-webkit-scrollbar {
+  display: none;
+}
+.modul .cars-box {
+  background-color: whitesmoke
+}

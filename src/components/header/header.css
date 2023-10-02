@@ -1,0 +1,60 @@
+.header {
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  background: var(--primary-0, #fff);
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header h2 {
+  color: var(--primary-500, #3563e9);
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.96px;
+}
+.header label {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  border-radius: 70px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  background: var(--primary-0, #fff);
+  align-items: center;
+  max-width: 492px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.header label input {
+  color: var(--secondary-400, #596780);
+  text-align: justify;
+  outline: none;
+  width: 200px;
+  border: none;
+  /* Medium/Type@14 */
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header ul li {
+  border-radius: 90px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  opacity: 0.8;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
