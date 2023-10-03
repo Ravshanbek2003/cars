@@ -7,14 +7,11 @@ import Cars from "./components/cars/Cars";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
 function App() {
-  // const [count, setCount] = useState(0)
   const [writeCars, setWriteCars] = useState(data);
-
-  
   return (
     <>
       <div className="container">
-        <Header writeCars={writeCars}  setWriteCars={setWriteCars}/>
+        <Header data={data} writeCars={writeCars}  setWriteCars={setWriteCars}/>
         <Card />
         <Cars data={data} writeCars={writeCars} setWriteCars={setWriteCars}/>
         <Footer />

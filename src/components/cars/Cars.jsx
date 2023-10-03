@@ -1,35 +1,30 @@
 import "./cars.css";
 
 import { useState } from "react";
-const Cars = ({ data ,setWriteCars,writeCars}) => {
-  
+const Cars = ({ data, setWriteCars, writeCars }) => {
   // const [hiddenlike, setHiddenlike] = useState(true);
   function likeBtn(id) {
-    // console.log(id);
-    setWriteCars((prev) =>
-    
-     {
-      return (prev.map((element) => {
+    console.log(id);
+    setWriteCars((prev) => {
+      return prev.map((element) => {
         if (element.id === id) {
-          element.like = true;
-        }
+          return { ...element, like: !element.like };
+      }
+        console.log(element);
         return element;
-      }))
+      });
     });
-    
   }
   return (
     <>
       <div className="cars-card">
-        {writeCars.map((car) => {
+        {writeCars.map((car, idx) => {
           return (
-            // ----
-
             <>
               {car.id === 5 && (
                 <div className="RecomendationCar">Recomendation Car</div>
               )}
-              <div className="cars-box">
+              <div className="cars-box" key={idx}>
                 <div className="cars-box-top">
                   <div className="cars-box-top-left">
                     <h4>{car.name}</h4>

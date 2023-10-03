@@ -189,3 +189,24 @@
   font-weight: 600;
   line-height: normal;
 }
+@media screen and (max-width: 700px) {
+  .card .card-top {
+    display: block;
+    justify-content: center;
+  }
+  .card .card-top .card-top-left,
+  .card .card-top .card-top-right {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .card-bottom {
+    display: block;
+    justify-content: center;
+  }
+  .card-bottom-left {
+    width: 150%;
+    margin: 30px auto;
+  }
+  .lot-time-blok label {
+  }
+}
