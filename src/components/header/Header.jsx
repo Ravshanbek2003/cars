@@ -1,4 +1,3 @@
-import "./header.css";
 import { useState } from "react";
 import SVG1 from "./SVG1";
 import SVG2 from "./SVG2";
@@ -10,11 +9,10 @@ import SVG7 from "./SVG7";
 import SVG8 from "./SVG8";
 import SVG9 from "./SVG9";
 import cars from "../../__mock__/data";
-// import SVG10 from "./SVG10";
+import "./header.css";
 const Header = ({ data, writeCars, setWriteCars }) => {
   const [showModul, setShowModule] = useState(false);
   function likeBtn(id) {
-    console.log(data);
     setWriteCars((prev) => {
       return prev.map((element) => {
         if (element.id === id) {
@@ -23,6 +21,15 @@ const Header = ({ data, writeCars, setWriteCars }) => {
         return element;
       });
     });
+    let count = 0;
+    writeCars.forEach((element) => {
+      if (element.like) {
+        count++;
+      }
+    });
+    if (count === 1) {
+      setShowModule(false);
+    }
   }
   function search(text) {
     if (text.trim().length) {
@@ -68,17 +75,16 @@ const Header = ({ data, writeCars, setWriteCars }) => {
         {showModul && (
           <>
             <div className="modul">
-              {writeCars.map((car) => {
+              {writeCars.map((car, idx) => {
                 return (
                   <>
                     {car.like && (
-                      <div className="cars-box">
+                      <div key={idx} className="cars-box">
                         <div className="cars-box-top">
                           <div className="cars-box-top-left">
                             <h4>{car.name}</h4>
                             <p>{car.title}</p>
                           </div>
-
                           <div
                             className="like-btn"
                             key={car.id}
