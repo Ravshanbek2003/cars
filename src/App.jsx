@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import { useState } from "react";
 function App() {
   const [writeCars, setWriteCars] = useState(data);
+  
   return (
     <>
       <div className="container">

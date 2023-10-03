@@ -13,6 +13,17 @@ import cars from "../../__mock__/data";
 // import SVG10 from "./SVG10";
 const Header = ({ data, writeCars, setWriteCars }) => {
   const [showModul, setShowModule] = useState(false);
+  function likeBtn(id) {
+    console.log(data);
+    setWriteCars((prev) => {
+      return prev.map((element) => {
+        if (element.id === id) {
+          return { ...element, like: !element.like };
+        }
+        return element;
+      });
+    });
+  }
   function search(text) {
     if (text.trim().length) {
       setWriteCars((prev) =>
@@ -42,10 +53,20 @@ const Header = ({ data, writeCars, setWriteCars }) => {
           <SVG2 />
         </span>
       </label>
-      <ul>
+      <ul className="modul-father">
         <li className="like-modul" onClick={() => hiddenModule()}>
           <SVG3 />
-          {showModul && (
+        </li>
+
+        <li>
+          <SVG9 />
+        </li>
+        <li>{/* <SVG10 /> */}</li>
+        <li>
+          <img src="./public/images/profil.svg" alt="" />
+        </li>
+        {showModul && (
+          <>
             <div className="modul">
               {writeCars.map((car) => {
                 return (
@@ -57,6 +78,7 @@ const Header = ({ data, writeCars, setWriteCars }) => {
                             <h4>{car.name}</h4>
                             <p>{car.title}</p>
                           </div>
+
                           <div
                             className="like-btn"
                             key={car.id}
@@ -95,15 +117,8 @@ const Header = ({ data, writeCars, setWriteCars }) => {
                 );
               })}
             </div>
-          )}
-        </li>
-        <li>
-          <SVG9 />
-        </li>
-        <li>{/* <SVG10 /> */}</li>
-        <li>
-          <img src="./public/images/profil.svg" alt="" />
-        </li>
+          </>
+        )}
       </ul>
     </div>
   );

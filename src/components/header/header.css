@@ -58,6 +58,31 @@
   align-items: center;
   cursor: pointer;
 }
+
+.modul-father {
+  position: relative;
+  z-index: 1;
+}
+
+.modul {
+  /* z-index: 1100; */
+  overflow-y: scroll;
+  left: -130px;
+  top: 40px;
+  position: absolute;
+  width: 304px;
+  height: 588px;
+  box-shadow: 0 0 5px #000;
+  border-radius: 20px;
+  /* background-color: rgb(223, 24, 24); */
+}
+.modul::-webkit-scrollbar {
+  display: none;
+}
+.modul .cars-box {
+  background-color: whitesmoke;
+}
+
 @media screen and (max-width: 700px) {
   .header label {
     position: absolute;

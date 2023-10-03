@@ -110,6 +110,7 @@ const Card = () => {
             <img src="./public/images/DropOff.svg" alt="" />
           </div>
           <div className="lot-time-blok">
+
             <label>
               <p>Locations</p>
               <select>
@@ -139,6 +140,7 @@ const Card = () => {
               </select>
             </label>
           </div>
+          {/* ======= */}
         </div>
       </div>
       <div className="popular">

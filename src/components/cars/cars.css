@@ -138,24 +138,3 @@
   line-height: 150%; /* 21px */
   letter-spacing: -0.28px;
 }
-.like-modul {
-  position: relative;
-  z-index: 10;
-}
-.modul {
-  overflow-y: scroll;
-  left: -130px;
-  top: 40px;
-  position: absolute;
-  width: 304px;
-  height: 588px;
-  box-shadow: 0 0 5px #000;
-  border-radius: 20px;
-  /* background-color: rgb(223, 24, 24); */
-}
-.modul::-webkit-scrollbar {
-  display: none;
-}
-.modul .cars-box {
-  background-color: whitesmoke
-}
