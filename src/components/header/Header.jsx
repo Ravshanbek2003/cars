@@ -9,14 +9,18 @@ import SVG6 from "./SVG6";
 import SVG7 from "./SVG7";
 import SVG8 from "./SVG8";
 import SVG9 from "./SVG9";
+import cars from "../../__mock__/data";
 // import SVG10 from "./SVG10";
 const Header = ({ data, writeCars, setWriteCars }) => {
   const [showModul, setShowModule] = useState(false);
   function search(text) {
-    console.log(text);
-    setWriteCars((prev) =>
-      prev.filter((el) => el.name.toLowerCase().includes(text))
-    );
+    if (text.trim().length) {
+      setWriteCars((prev) =>
+        prev.filter((el) => el.name.toLowerCase().includes(text))
+      );
+    } else {
+      setWriteCars(cars);
+    }
   }
   function hiddenModule() {
     setShowModule(!showModul ? true : false);
