@@ -28,6 +28,7 @@
 }
 
 .header label input {
+  padding: 10px;
   color: var(--secondary-400, #596780);
   text-align: justify;
   outline: none;
