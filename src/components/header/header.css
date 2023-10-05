@@ -83,7 +83,25 @@
 .modul .cars-box {
   background-color: whitesmoke;
 }
-
+.like-modul {
+  position: relative;
+}
+.count-like {
+  box-shadow: 0 0 5px red;
+  font-family: serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #ff4423;
+  position: absolute;
+}
 @media screen and (max-width: 700px) {
   .header label {
     position: absolute;

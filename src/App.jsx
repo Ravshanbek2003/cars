@@ -8,13 +8,25 @@ import Footer from "./components/footer/Footer";
 import { useState } from "react";
 function App() {
   const [writeCars, setWriteCars] = useState(data);
-  
+  const [countLiked, setCountLiked] = useState(0);
   return (
     <>
       <div className="container">
-        <Header data={data} writeCars={writeCars}  setWriteCars={setWriteCars}/>
+        <Header
+          countLiked={countLiked}
+          setCountLiked={setCountLiked}
+          data={data}
+          writeCars={writeCars}
+          setWriteCars={setWriteCars}
+        />
         <Card />
-        <Cars data={data} writeCars={writeCars} setWriteCars={setWriteCars}/>
+        <Cars
+          countLiked={countLiked}
+          setCountLiked={setCountLiked}
+          data={data}
+          writeCars={writeCars}
+          setWriteCars={setWriteCars}
+        />
         <Footer />
       </div>
     </>

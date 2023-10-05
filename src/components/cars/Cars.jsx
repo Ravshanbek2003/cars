@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import SVG1 from "./SVG1";
 import SVG2 from "./SVG2";
@@ -6,16 +5,23 @@ import SVG3 from "./SVG3";
 import SVG4 from "./SVG4";
 import SVG5 from "./SVG5";
 import "./cars.css";
-const Cars = ({ data, setWriteCars, writeCars }) => {
+const Cars = ({ countLiked, setCountLiked,data, setWriteCars, writeCars }) => {
+  let y = 1;
   function likeBtn(id) {
     setWriteCars((prev) => {
       return prev.map((element) => {
         if (element.id === id) {
           return { ...element, like: !element.like };
-      }
+        }
         return element;
       });
     });
+    writeCars.forEach((element) => {
+      if (element.like === true) {
+        ++y;
+      }
+    });
+    setCountLiked(y)
   }
   return (
     <>
@@ -37,11 +43,7 @@ const Cars = ({ data, setWriteCars, writeCars }) => {
                     key={car.id}
                     onClick={() => likeBtn(car.id)}
                   >
-                    {car.like ? (
-                      <SVG1/>
-                    ) : (
-                      <SVG2/>
-                    )}
+                    {car.like ? <SVG1 /> : <SVG2 />}
                   </div>
                 </div>
                 <div className="cars-box-middle">
@@ -50,17 +52,13 @@ const Cars = ({ data, setWriteCars, writeCars }) => {
                 <div className="cars-box-bottom">
                   <div className="cars-box-bottom-1">
                     <div className="manual">
-                      <SVG3/>
-                      {" "}
-                      {car.bag}
+                      <SVG3 /> {car.bag}
                     </div>
                     <div className="manual">
-                      <SVG4/>
-                      {" "}
-                      Manual
+                      <SVG4 /> Manual
                     </div>
                     <div className="manual">
-                     <SVG5/>
+                      <SVG5 />
                       {car.people}
                     </div>
                   </div>
