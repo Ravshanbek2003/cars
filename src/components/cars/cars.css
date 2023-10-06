@@ -1,5 +1,6 @@
 .cars-card {
   display: flex;
+  justify-content: space-between;
   background: #f6f7f9;
   flex-wrap: wrap;
   gap: 30px;
