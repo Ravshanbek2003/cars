@@ -31,6 +31,7 @@ const Card = () => {
         </div>
       </div>
       <div className="card-bottom">
+        
         <div className="card-bottom-left">
           <div className="pick-up">
             <img src="./public/images/PickUp.svg" alt="" />

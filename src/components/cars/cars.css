@@ -138,3 +138,13 @@
   line-height: 150%; /* 21px */
   letter-spacing: -0.28px;
 }
+
+@media screen and (max-width: 600px) {
+  .cars-card {
+    margin: 20px auto;
+    display: flex;
+    width: 310px;
+    background: #f6f7f9;
+    gap: 30px;
+  }
+}
